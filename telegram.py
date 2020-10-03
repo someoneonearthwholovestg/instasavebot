@@ -3,7 +3,7 @@ from time import gmtime, strftime
 from private import teletoken
 from instalooter.looters import PostLooter
 
-bot = telebot.TeleBot(teletoken)
+bot = telebot.TeleBot(900878316:AAGMZOBVFNgGVHFcCXCt1Mp-CS9a6ssbxXg)
 
 
 def log(time, message):
