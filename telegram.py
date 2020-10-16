@@ -1,8 +1,8 @@
 import telebot
 from time import gmtime, strftime
-from private import teletoken
-from instalooter.looters import PostLooter
 
+from instalooter.looters import PostLooter
+token=os.environ.get("token","")
 bot = telebot.TeleBot(900878316:AAGMZOBVFNgGVHFcCXCt1Mp-CS9a6ssbxXg)
 
 
