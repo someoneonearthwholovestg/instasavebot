@@ -1,5 +1,5 @@
 import telebot
-from time import gmtime, strftime
+bot=telebot.TeleBot(token)
 
 from instalooter.looters import PostLooter
 token=os.environ.get("token","")
