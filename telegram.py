@@ -1,9 +1,9 @@
 import telebot
-bot=telebot.TeleBot(token)
+
 
 from instalooter.looters import PostLooter
 token=os.environ.get("token","")
-bot = telebot.TeleBot(900878316:AAGMZOBVFNgGVHFcCXCt1Mp-CS9a6ssbxXg)
+bot=telebot.TeleBot(token)
 
 
 def log(time, message):
