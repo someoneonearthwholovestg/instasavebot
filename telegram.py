@@ -1,4 +1,5 @@
 import telebot
+from time import gmtime, strftime
 import os
 
 from instalooter.looters import PostLooter
