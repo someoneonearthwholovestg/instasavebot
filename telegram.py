@@ -1,5 +1,5 @@
 import telebot
-
+import os
 
 from instalooter.looters import PostLooter
 token=os.environ.get("token","")
