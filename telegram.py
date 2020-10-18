@@ -22,7 +22,7 @@ def start_message(message):
     log(strftime("%Y-%m-%d %H:%M:%S", gmtime()), message)
     bot.send_message(message.chat.id, 'Welcome to InstaSaveBot, {}'.format(message.from_user.first_name))
     bot.send_message(message.chat.id, 'Send me an instagram link or a user\'s username like @username.\n\nNeed more help?\nJust tap: /help')
-    bot.send_message(509291958, 'added new user, @{}\nchatid: {}'.format(message.from_user.username, message.chat.id))
+
 
 
 @bot.message_handler(commands=['help'])
@@ -64,7 +64,7 @@ def fix_message(message):
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     log(strftime("%Y-%m-%d %H:%M:%S", gmtime()), message)
-    bot.send_message(509291958, '@{} send(id{}):\n\'{}\''.format(message.from_user.username, message.chat.id, message.text))
+
     if 'instagram.com/p/' in message.text:
         path = message.text
         looter = PostLooter(path)
